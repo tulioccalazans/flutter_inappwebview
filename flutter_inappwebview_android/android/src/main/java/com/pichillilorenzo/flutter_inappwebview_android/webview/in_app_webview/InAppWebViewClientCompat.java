@@ -246,7 +246,7 @@ public class InAppWebViewClientCompat extends WebViewClientCompat {
 
     // WebView not storing cookies reliable to local device storage
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-      CookieManager.getInstance().flush();
+      //CookieManager.getInstance().flush();
     } else {
       CookieSyncManager.getInstance().sync();
     }
